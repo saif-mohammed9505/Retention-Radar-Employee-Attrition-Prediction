@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1F3A"/>
+      <stop offset="100%" stop-color="#132C4F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1FB6A6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1FB6A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="260" fill="url(#bgGrad)"/>
+  <circle cx="980" cy="120" r="220" fill="url(#glow)"/>
+
+  <!-- radar rings -->
+  <g stroke="#2C4970" stroke-width="1.5" fill="none" opacity="0.7">
+    <circle cx="980" cy="130" r="40"/>
+    <circle cx="980" cy="130" r="75"/>
+    <circle cx="980" cy="130" r="110"/>
+  </g>
+  <line x1="980" y1="20" x2="980" y2="240" stroke="#2C4970" stroke-width="1"/>
+  <line x1="870" y1="130" x2="1090" y2="130" stroke="#2C4970" stroke-width="1"/>
+
+  <!-- sweep -->
+  <path d="M980 130 L980 20 A110 110 0 0 1 1057 63 Z" fill="#1FB6A6" opacity="0.18"/>
+
+  <!-- people nodes -->
+  <g>
+    <circle cx="1020" cy="95" r="6" fill="#F5A623"/>
+    <circle cx="930" cy="150" r="5" fill="#1FB6A6"/>
+    <circle cx="1010" cy="175" r="5" fill="#EDEAE0"/>
+    <circle cx="945" cy="90" r="4" fill="#1FB6A6"/>
+    <circle cx="1055" cy="140" r="5" fill="#EDEAE0"/>
+    <line x1="980" y1="130" x2="1020" y2="95" stroke="#F5A623" stroke-width="1.5" opacity="0.7"/>
+    <line x1="980" y1="130" x2="930" y2="150" stroke="#1FB6A6" stroke-width="1.5" opacity="0.7"/>
+    <line x1="980" y1="130" x2="1010" y2="175" stroke="#EDEAE0" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- headline text -->
+  <text x="60" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#F7F5F0">Retention Radar</text>
+  <text x="61" y="150" font-family="Arial, sans-serif" font-size="17" fill="#9FB3CC" letter-spacing="0.5">Bagging-ensemble attrition intelligence for people teams</text>
+
+  <!-- small ticks -->
+  <g fill="#F5A623">
+    <rect x="61" y="175" width="26" height="4" rx="2"/>
+    <rect x="93" y="175" width="26" height="4" rx="2" opacity="0.5"/>
+  </g>
+</svg>
